@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     color: white;
     padding: 10px 20px;
   }
