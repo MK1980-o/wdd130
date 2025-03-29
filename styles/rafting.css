@@ -2,10 +2,9 @@
     --primary-color: #004B87;
     --secondary-color: #FF6A13;
     --accent1-color: #4CAF50;
-    --accent2-color: #8D8F8A;
+    --accent2-color: #D3D6DB;
     --light-bg: #f4f4f4;
     --dark-text: #333;
-    --light-title: #f0f8ff;
   }
   
   body {
@@ -32,7 +31,6 @@
   header h1 {
     margin: 0;
     font-size: 1.8rem;
-    color: var(--light-title);
   }
   
   nav ul {
