@@ -3,31 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Trips - Thunder Rapids Rafting</title>
+    <title>Contact Us - Thunder Rapids Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <img src="images/logo.jpg" alt="Thunder Rapids Rafting Logo">
+        <h1>Thunder Rapids Rafting</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Our Rafting Trips</h1>
-            <p>We offer a variety of whitewater rafting experiences, from beginner-friendly to extreme adventures.</p>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p><strong>Phone:</strong> +263 781608989</p>
+            <p><strong>Email:</strong> <a href="mailto:thunderrapids@gmail.com">thunderrapids@gmail.com</a></p>
+            <p><strong>Address:</strong> 123 Rapids Lane, Victoria Falls, Zimbabwe</p>
+        </section>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="social-media">
+            <h2>Follow Us</h2>
             <ul>
-                <li><strong>Beginner Rapids:</strong> A gentle introduction to rafting, perfect for families.</li>
-                <li><strong>Intermediate Rapids:</strong> Thrilling but manageable rapids for adventure seekers.</li>
-                <li><strong>Extreme Rapids:</strong> High-adrenaline rapids for experienced rafters.</li>
+                <li><a href="#">Facebook: Thunder Rapids Rafting</a></li>
+                <li><a href="#">Instagram: @thunderrapids</a></li>
+                <li><a href="#">Twitter: @thunderrapids</a></li>
             </ul>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Thunder Rapids Rafting | Designed by Marko</p>
+        <div class="social-links">
+            <a href="#"><img src="images/facebook-icon.jpg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.jpg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-icon.jpg" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 </html>
