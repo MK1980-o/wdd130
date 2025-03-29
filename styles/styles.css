@@ -1,4 +1,3 @@
-/* Root Variables */
 :root {
   --primary-color: #004B87;
   --secondary-color: #FF6A13;
@@ -8,7 +7,6 @@
   --dark-text: #333;
 }
 
-/* General Styling */
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--dark-text);
@@ -17,7 +15,6 @@ body {
   background-color: var(--light-bg);
 }
 
-/* Header Styling */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -53,7 +50,6 @@ nav ul li a {
   font-weight: bold;
 }
 
-/* Main Layout */
 main {
   max-width: 900px;
   margin: 20px auto;
@@ -66,7 +62,6 @@ main {
   margin-bottom: 20px;
 }
 
-/* Contact Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -100,7 +95,6 @@ button:hover {
   background-color: #e55a0d;
 }
 
-/* Footer Styling */
 footer {
   display: flex;
   justify-content: space-between;
