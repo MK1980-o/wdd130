@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Thunder Rapids Rafting - Reach out for reservations, general inquiries, or suggestions. We're here to help make your rafting adventure unforgettable!">
+    <meta name="author" content="Marko">
     <title>Contact Us - Thunder Rapids Rafting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -19,37 +24,74 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="contact-info">
-            <h1>Contact Us</h1>
-            <p><strong>Phone:</strong> +263 781608989</p>
-            <p><strong>Email:</strong> <a href="mailto:thunderrapids@gmail.com">thunderrapids@gmail.com</a></p>
-            <p><strong>Address:</strong> 123 Rapids Lane, Victoria Falls, Zimbabwe</p>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have a question, suggestion, or want to book your next adventure? We're just a message away!</p>
         </section>
-        <section class="contact-form">
-            <h2>Get in Touch</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
+
+        <section>
+            <h3>Company Information</h3>
+            <p><strong>Address:</strong> 12 Riverbend Lane, Zambezi Valley, Zimbabwe</p>
+            <p><strong>Phone:</strong> +263 781 608 989</p>
+            <p><strong>Email:</strong> info@thunderrapids.com</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.231576227416!2d25.841862515345725!3d-17.924302316053957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a58f6ad7c6b7%3A0x36552931956ec3c!2sVictoria%20Falls%2C%20Zimbabwe!5e0!3m2!1sen!2szw!4v1712476921681!5m2!1sen!2szw"
+                    width="400" height="300" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h3>Meet Our Team</h3>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Gracious - Lead Guide">
+                    <figcaption>Gracious - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Kudakwashe - Safety Coordinator">
+                    <figcaption>Kudakwashe - Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpeg" alt="Amit - Booking Manager">
+                    <figcaption>Amit - Booking Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
+
+                <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
+
+                <p>Purpose of Message:</p>
+                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+                <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-                
+
+                <label>
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
                 <button type="submit">Send Message</button>
             </form>
         </section>
-        <section class="social-media">
-            <h2>Follow Us</h2>
-            <ul>
-                <li><a href="#">Facebook: Thunder Rapids Rafting</a></li>
-                <li><a href="#">Instagram: @thunderrapids</a></li>
-                <li><a href="#">Twitter: @thunderrapids</a></li>
-            </ul>
-        </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Thunder Rapids Rafting | Designed by Marko</p>
         <div class="social-links">
@@ -57,6 +99,7 @@
             <a href="#"><img src="images/twitter-icon.jpg" alt="Twitter"></a>
             <a href="#"><img src="images/instagram-icon.jpg" alt="Instagram"></a>
         </div>
+        <p><a href="images/contact-wireframe.jpg" target="_blank">View Contact Us Page Wireframe</a></p>
     </footer>
 </body>
 </html>

@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
   --primary-color: #004B87;
   --secondary-color: #FF6A13;
@@ -7,6 +8,7 @@
   --dark-text: #333;
 }
 
+/* General Styling */
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--dark-text);
@@ -15,6 +17,7 @@ body {
   background-color: var(--light-bg);
 }
 
+/* Header Styling */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -38,7 +41,6 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: flex-end;
 }
 
 nav ul li {
@@ -51,6 +53,7 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Main Layout */
 main {
   max-width: 900px;
   margin: 20px auto;
@@ -59,26 +62,11 @@ main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .contact-info, .contact-form, .social-media {
   margin-bottom: 20px;
 }
 
+/* Contact Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -112,6 +100,7 @@ button:hover {
   background-color: #e55a0d;
 }
 
+/* Adventure Section Styling */
 .adventure-gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -135,6 +124,7 @@ figcaption {
   color: var(--primary-color);
 }
 
+/* Additional figure elements for compliance */
 .adventure-gallery figure {
   display: flex;
   flex-direction: column;
@@ -152,6 +142,7 @@ figcaption {
   color: var(--dark-text);
 }
 
+/* Footer Styling */
 footer {
   display: flex;
   justify-content: space-between;
@@ -168,84 +159,4 @@ footer .social-links {
 
 footer .social-links img {
   height: 30px;
-}
-
-.location-info, .cta-contact {
-  margin: 2rem 0;
-  padding: 1rem;
-}
-
-.location-info p {
-  line-height: 1.6;
-}
-
-.map-container iframe {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.cta-contact {
-  background-color: #f5f5f5;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-.cta-contact a {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
-.cta-contact a:hover {
-  color: var(--secondary-color);
-}
-
-@media (max-width: 768px) {
-  header {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  header h1 {
-    margin-top: 10px;
-    font-size: 1.5rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-
-  nav ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .hero {
-    height: 300px;
-  }
-
-  .adventure-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.2rem;
-  }
-
-  .hero {
-    height: 250px;
-  }
-
-  .adventure-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-contact {
-    font-size: 0.95rem;
-  }
 }
