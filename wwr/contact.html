@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,8 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.jpg" alt="Thunder Rapids Rafting Logo">
-        <h1>Thunder Rapids Rafting</h1>
+        <img src="images/logo.jpg" alt="Thunder Rapids Rafting Logo" id="logo">
+        <h1>Contact Us - Thunder Rapids Rafting</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -51,15 +51,15 @@
             <h3>Meet Our Team</h3>
             <div class="employee-gallery">
                 <figure>
-                    <img src="images/employee1.jpg" alt="Gracious - Lead Guide">
+                    <img src="images/employee1.jpg" alt="Gracious - Lead Guide" id="employee1">
                     <figcaption>Gracious - Lead Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee2.jpg" alt="Kudakwashe - Safety Coordinator">
+                    <img src="images/employee2.jpg" alt="Kudakwashe - Safety Coordinator" id="employee2">
                     <figcaption>Kudakwashe - Safety Coordinator</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/employee3.jpeg" alt="Amit - Booking Manager">
+                    <img src="images/employee3.jpeg" alt="Amit - Booking Manager" id="employee3">
                     <figcaption>Amit - Booking Manager</figcaption>
                 </figure>
             </div>
@@ -75,15 +75,15 @@
                 <input type="email" id="email" name="email" required>
 
                 <p>Purpose of Message:</p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                <label for="general"><input type="radio" id="general" name="purpose" value="general" required> General Inquiry</label>
+                <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
+                <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe">
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
@@ -95,9 +95,9 @@
     <footer>
         <p>&copy; 2025 Thunder Rapids Rafting | Designed by Marko</p>
         <div class="social-links">
-            <a href="#"><img src="images/facebook-icon.jpg" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter-icon.jpg" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram-icon.jpg" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook-icon.jpg" alt="Facebook" id="facebook"></a>
+            <a href="#"><img src="images/twitter-icon.jpg" alt="Twitter" id="twitter"></a>
+            <a href="#"><img src="images/instagram-icon.jpg" alt="Instagram" id="instagram"></a>
         </div>
         <p><a href="images/contact-wireframe.jpg" target="_blank">View Contact Us Page Wireframe</a></p>
     </footer>
